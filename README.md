@@ -1,1 +1,7 @@
 # Analytics-Firm-Clients
+This project is a summative data science lab built around three client scenarios at an analytics firm. Each part works with a different kind of data and follows the same arc of exploring, preprocessing, modeling, and interpreting the results.
+The first notebook tackles natural language processing using the 20 Newsgroups dataset, which stands in for community forum posts that a support team needs to route. It cleans and tokenizes the text, removes stopwords, applies lemmatization, and then looks at word frequencies and common bigrams and trigrams to understand the language each category uses.
+
+The second notebook forecasts the S&P 500. It tests the series for stationarity with the ADF test, applies log transforms and differencing, and uses ACF and PACF plots to choose candidate ARIMA models. Those models are compared with AIC and BIC, then judged on held-out data using MAE and RMSE, with a short discussion of what the forecast error means for planning and investment decisions.
+
+The third notebook builds neural networks for two problems: handwritten digit classification and prediction on the wine dataset. It trains multi-layer perceptrons, explains the architecture and activation choices, evaluates them with accuracy, a confusion matrix, and a classification report, and checks for overfitting while experimenting with hyperparameters such as dropout and optimizers.
